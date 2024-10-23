@@ -3,49 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timetable</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .timetable {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        .timetable td, .timetable th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        .timetable th {
-            background-color: #f2f2f2;
-        }
-        .timetable td {
-            text-align: center;
-        }
-        .timetable tbody tr:hover {
-            background-color: #f1f1f1;
-        }
-        @media (max-width: 768px) {
-            .timetable {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-        }
-    </style>
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="tt.css">
 </head>
 <body>
-    <div class="container mt-4">
-        <h2 class="text-center">Weekly Timetable</h2>
-        <table class="table timetable">
+    <div class="container">
+        <table>
             <thead>
                 <tr>
-                    <th>Day/Time</th>
-                    <th>9:10-10:10</th>
-                    <th>10:10-11:10</th>
-                    <th>11:15-12:15</th>
-                    <th>12:15-1:00</th>
-                    <th>1:00-2:00</th>
-                    <th>2:00-3:00</th>
-                    <th>3:00-4:00</th>
+                    <th>Day/Period</th>
+                    <th>Period 1</th>
+                    <th>Period 2</th>
+                    <th>Period 3</th>
+                    <th>Lunch Break</th>
+                    <th>Period 4</th>
+                    <th>Period 5</th>
+                    <th>Period 6</th>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <td>9:00 - 10:00</td>
+                    <td>10:00 - 11:00</td>
+                    <td>11:00 - 12:00</td>
+                    <td>12:00 - 1:00</td>
+                    <td>1:00 - 2:00</td>
+                    <td>2:00 - 3:00</td>
+                    <td>3:00 - 4:00</td>
                 </tr>
             </thead>
             <tbody>
@@ -54,61 +37,61 @@
                     <td>SE</td>
                     <td>FLAT</td>
                     <td>EAD</td>
-                    <td rowspan="6" > <div style="transform: rotate(90deg); text-align: center; height: 100px; width: 50px;">
-                        L U N C H 
-                      </div></td>
+                    <td class="lunch-break">Lunch</td>
                     <td>PE-2</td>
                     <td>CN</td>
                     <td>ML</td>
                 </tr>
                 <tr>
-                    <td>TUESDAY</td>
+                    <td>Tuesday</td>
                     <td>PE-2</td>
-                    <td colspan="2">ML-LAB</td>
-            
-                    
+                    <td>CT LAB</td>
+                    <td>CT LAB </td>
+                    <td class="lunch-break">Lunch</td>
                     <td>CN</td>
-                    <td>LIB</td>
+                    <td>CC LAB</td>
+                    <td>CC LAB</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>EAD</td>
+                    <td>ML</td>
+                    <td>CN LAB</td>
+                    <td class="lunch-break">Lunch</td>
+                    <td>CN LAB</td>
+                    <td>SE</td>
+                    <td>FLAT</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>ML LAB</td>
+                    <td>ML LAB</td>
+                    <td>CN</td>
+                    <td class="lunch-break">Lunch</td>
+                    <td>SE</td>
+                    <td>EAD LAB</td>
+                    <td>EAD LAB</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>FLAT</td>
+                    <td>ML</td>
+                    <td>PE-2</td>
+                    <td class="lunch-break">Lunch</td>
+                    <td>EAD</td>
+                    <td>LIBRARY</td>
                     <td>SPORTS</td>
                 </tr>
                 <tr>
-                    <td>WEDNESDAY</td>
-                    <td>EAD</td>
-                    <td>ML</td>
-                    <td>EAD-LAB</td>
-                    
-                    <td>EAD-LAB</td>
-                    <td>SE</td>
-                    <td>FLAT</td>
-                </tr>
-                <tr>
-                    <td>THURSDAY</td>
-                    <td colspan="2">CT-LAB</td>
-                    <td>CN</td>
-                    
-                    <td>SE</td>
-                    <td colspan="2">CN-LAB</td>
-                </tr>
-                <tr>
-                    <td>FRIDAY</td>
-                    <td>FLAT</td>
-                    <td>ML</td>
-                    <td>PE-2</td>
-                    
-                    <td>EAD</td>
-                    <td colspan="2">CC-LAB</td>
-                </tr>
-                <tr>
-                    <td>SATURDAY</td>
+                    <td>Saturday</td>
                     <td>MENTORING</td>
                     <td></td>
-                    
                     <td></td>
+                    <td class="lunch-break">Lunch</td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <!-- Add more rows as needed -->
             </tbody>
         </table>
     </div>
